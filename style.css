@@ -1,8 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 main {
-    font-family: sans-serif;
-    font-size: 15px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+li {
+  margin: 10px;
+}
+/* desktop */
+@media only screen and (min-width: 900px) {
+  main {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: rgb(228, 231, 43);
+    color: rgb(173, 25, 173);
+  }
+  li {
+    padding-left: 5px;
+  }
+  ol li:first-letter {
+    color: red;
+    font-size: 1.5em;
+  }
+}
+/* Tablet Mode */
+@media (min-width: 471px) {
+  main {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(153, 22, 98);
+    padding: 20px;
+    margin: 10px;
+  }
+  ol li,
+  p {
+    padding-left: 5px;
+    margin: 20px;
+  }
 }
 
-li {
-    margin: 10px;
+/* small devices */
+@media only screen and (max-width: 470px) {
+  main {
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+  }
+  ol {
+    padding-left: 40px;
+  }
+}
+/* print mode */
+@media print {
+  h1,
+  p,
+  ol {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    /* border: none; */
+  }
+  p {
+    font-size: 14px;
+  }
+  ol {
+    font-size: 12px;
+  }
+  /* header, nav, footer{
+    display: none;
+  } */
 }
